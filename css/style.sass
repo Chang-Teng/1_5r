@@ -1,0 +1,219 @@
+html,body
+  height: 100%
+  width: 100%
+  font-size: 10px
+
+  @media screen and (min-width: 0) and (max-width: 375px )
+html
+  font-size: 10px
+  @media screen and (min-width: 375px) and (max-width: 768px )
+html
+  font-size: 12px
+  @media screen and (min-width: 768px)
+html
+  font-size: 14px
+
+.header
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 44px
+  line-height: 44px
+  background: #ED5858
+  text-align: center
+  font-size: 1.6rem
+  color: #fff
+  font-weight: 700
+  .header-img
+    position: absolute
+    right: 15px
+    top: 0
+    height: 18px
+    width: 18px
+    img
+      height: 100%
+      width: 100%
+
+.section
+  position: absolute
+  top: 44px
+  bottom: 51px
+  height: auto
+  width: 100%
+  display: -webkit-flex
+  -webkit-flex-direction: column
+  overflow: hidden
+.section-nav
+  background: #fff
+  z-index: 10
+  height: 40px
+  line-height: 40px
+  text-align: center
+  display: -webkit-flex
+  span
+    -webkit-flex: 1
+    font-size: 1.2rem
+    border-bottom: 1px solid #DDDDDD
+    &:nth-child(1)
+      border-right: 1px solid #DDDDDD
+  .nav-bg
+    color: #ED5858
+    border-bottom: 2px solid #ED5858
+.swiper-o
+  -webkit-flex: 1
+  position: absolute
+  top: 0
+  bottom: 0
+  width: 100%
+  .wrapper
+    -webkit-flex: 1
+    position: absolute
+    top: 42px
+    bottom: 0
+    width: 100%
+    overflow: hidden
+.section-main
+  -webkit-flex: 1
+  .section-install
+    width: 100%
+    height: auto
+em
+  font-style: normal
+.conter
+  padding-left: 15px
+  padding-right: 10px
+  border-bottom: 1px #dddddd solid
+  .by
+    p
+      padding-top: 15px
+      font-size: 1.4rem
+      padding-bottom: 5px
+      span:nth-child(2)
+        color: #aaaaaa
+        padding: 0 5px
+    ul
+      display: -webkit-flex
+      li
+        -webkit-flex: 1
+        font-size: 1.2rem
+        color: #aaaaaa
+        &:not(:nth-child(1))
+          text-align: center
+      li:first-child
+        position: relative
+        span:first-child
+          font-size: 1.2rem
+          color: #b6b6b6
+          position: absolute
+          right: -25px
+          top: 0
+        span:nth-child(2)
+          font-size: 3.6rem
+          color: #ff8800
+          em
+            font-size: 1.4rem
+      li:nth-child(2)
+        span:first-child
+          line-height: 22px
+        span:last-child
+          line-height: 42px
+          em:first-child
+            font-size: 1.6rem
+            color: #000000
+      li:last-child
+        margin-top: -10px
+        span:first-child
+          margin-top: 8px
+          width: 40px
+          height: 40px
+          background-color: #ff6161
+          border-radius: 100%
+          display: inline-block
+          color: #ffffff
+          text-align: center
+          line-height: 40px
+          font-size:  1rem
+        span:last-child
+          font-size: 10px
+          em
+            color: #ff6161
+
+
+.footer
+  position: absolute
+  bottom: 0
+  left: 0
+  height: 50px
+  width: 100%
+  background: #F7F7F7
+  border-top: 1px solid #C5C5C5
+  display: -webkit-flex
+  -webkit-justify-content: space-around
+
+  dl
+    padding-top: 5px
+    text-align: center
+    dt
+      display: inline-block
+      height: 21px
+      width: 21px
+      img
+        width: 100%
+        height: 100%
+    dd
+      font-size: 1.0rem
+
+.header-nav
+  position: fixed
+  left: 0
+  top: 44px
+  width: 100%
+  z-index: 20
+  padding: 0 10px
+  background: #fff
+  .header-b
+    height: 44px
+    width: 100%
+    border-bottom: 1px solid #DDDDDD
+    line-height: 44px
+.mark
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  margin-top: 44px
+  width: 100%
+  height: 100%
+  background: #7F7F7F
+  opacity: .5
+.nav-form
+  label
+    font-size: 1.2rem
+    padding-left: 10px
+.radio_la
+  z-index: 11
+  & input
+    display: none
+  & input + .track:after
+    display: none
+  & input:checked + .track
+    background: #3FBE00
+  & input:checked + .track:after
+    display: block
+  .track
+    width: 20px
+    height: 20px
+    border: 1px solid #bbbbbb
+    border-radius: 10px
+    background: #ededed
+    display: inline-block
+    &:after
+      content: " "
+      width: 10px
+      height: 7px
+      margin-top: 4px
+      margin-left: 4px
+      border-left: 2px solid #fff
+      border-bottom: 2px solid #fff
+      -webkit-transform: rotate(-45deg)
